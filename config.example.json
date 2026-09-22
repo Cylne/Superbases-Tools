@@ -1,0 +1,6 @@
+{
+  "source": {"name": "supabase-source", "database_url": "${SOURCE_DATABASE_URL}", "project_url": "${SOURCE_PROJECT_URL}", "service_role_key": "${SOURCE_SERVICE_ROLE_KEY}", "project_ref": "${SOURCE_PROJECT_REF:-}", "access_token": "${SUPABASE_ACCESS_TOKEN:-}"},
+  "target": {"name": "supabase-target", "database_url": "${TARGET_DATABASE_URL}", "project_url": "${TARGET_PROJECT_URL}", "service_role_key": "${TARGET_SERVICE_ROLE_KEY}", "project_ref": "${TARGET_PROJECT_REF:-}", "access_token": "${SUPABASE_ACCESS_TOKEN:-}"},
+  "settings": {"backup_dir": "backups", "retention_count": 10, "command_timeout_seconds": 3600, "storage_page_size": 100, "functions_dir": "supabase/functions"},
+  "telegram": {"bot_token": "${TELEGRAM_BOT_TOKEN:-}", "chat_id": "${TELEGRAM_CHAT_ID:-}"}
+}

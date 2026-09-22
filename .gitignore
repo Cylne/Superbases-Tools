@@ -1,0 +1,5 @@
+config.json
+.env
+backups/
+logs/
+__pycache__/

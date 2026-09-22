@@ -1,0 +1,10 @@
+services:
+  supamigrate:
+    build: .
+    env_file: .env
+    volumes:
+      - ./config.json:/app/config.json:ro
+      - ./backups:/app/backups
+      - ./logs:/app/logs
+      - ./supabase:/app/supabase:ro
+    command: ["check"]
